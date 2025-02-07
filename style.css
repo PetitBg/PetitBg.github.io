@@ -1,0 +1,248 @@
+/* Typographie et couleurs de base */
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+a {
+  text-decoration: none;
+  color: #00bfa5;
+}
+
+.header, footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.nav-links a:hover {
+  color: #00E676;
+}
+.logo{
+  width: 50px;
+  height: 50px;
+}
+
+/* Sections */
+.home {
+  background: #333 url('img/header-bg.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home-content .cta-button {
+  background-color: #00E676;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.about, .skills, .experience, .projects, .contact {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.skills-category {
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 45%;
+  margin: 10px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #00E676;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Section "Mes Réalisations" */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-item {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Section "Mes Compétences" */
+.skills-category {
+  margin-bottom: 30px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.skill {
+  width: 45%;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.skill-logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.progress-bar {
+  background-color: #ddd;
+  border-radius: 5px;
+  height: 20px;
+  width: 70%;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #00E676;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+/* Section "Mes Expériences" */
+.experience {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00E676;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: none;
+  font-size: 20px;
+}
+
+
+
+.experience-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #e3e3e3;
+  border-radius: 10px;
+}
+.contact-buttons .cta-button {
+  background-color: #00bfa5;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  margin: 10px;
+  text-decoration: none;
+}
+.contact-buttons .cta-button:hover {
+  background-color: #008c72;
+}
+
+
+.back-to-top {
+  position: relative;
+  bottom: 20px;
+  right: 20px;
+  background-color: #00E676;
+  color: green;
+  padding: 10px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: none;
+  font-size: 4440px;
+}
+ .back-to-top:hover {
+  background-color: #00c853;
+}
+/* Style pour la section active */
+section.active-section {
+  background-color: #f0f8ff; /* Couleur de fond différente pour la section active */
+  transition: background-color 0.5s;
+}
+
+/* Style de survol des compétences */
+.skill {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.05); /* Agrandit la compétence au survol */
+  background-color: #e0f7fa; /* Change la couleur de fond au survol */
+  border-radius: 5px;
+}
+
+.progress-bar span {
+  display: block;
+  height: 100%;
+  background-color: #00E676;
+  border-radius: 5px;
+  text-align: center;
+  color: #fff;
+  transition: width 0.3s ease;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+}
